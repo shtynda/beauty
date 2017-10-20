@@ -1,0 +1,114 @@
+.main-btn{
+  display: block;
+  border-radius: 2em;
+  padding-bottom: .8em;
+  padding-top: .8em;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+  width: 95%;
+  z-index: 2002;
+  background-image: linear-gradient(to right, #f0533f, #f59087);
+  transition: all .2s ease;
+  &:hover{
+    color: #fff;
+    background-image: linear-gradient(to right, #d0423c, #f37a73);
+    transition: all .2s ease;
+    box-shadow: 0 0 50px 3px rgba(0,0,0,0.2);
+  }
+}
+
+.title-block{
+  margin-bottom: 35px;
+  h1{
+    font-size: 52px;
+    font-weight: 900;
+    text-align: left;
+    color: #3a3a3a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-family: MuseoSansCyrl900;
+  }
+  p{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: #3a3a3a;
+    font-family: MuseoSansCyrl300;
+  }
+}
+
+.next-ar{
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+  top: 60%;
+  right: 40px;
+  z-index: 1010;
+  background-color: #ffffff;
+  box-shadow: 0 0 19.7px 4.3px rgba(0, 0, 0, 0.13);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .2s ease;
+  &:hover{
+    box-shadow: 0 0 29.7px 5.3px rgba(0, 0, 0, 0.23);
+    transition: all .2s ease;
+  }
+  &:before{
+    content: "";
+    display: block;
+    z-index: 4001;
+    width: 64px;
+    height: 64px;
+    margin-top: 3px;
+    margin-left: 3px;
+    background-image: url("../img/arrows_right.png");
+    background-size: cover;
+    transition: all .2s ease;
+  }
+  &:active{
+    &:before{
+      margin-left: 8px;
+      transition: all .2s ease;
+    }
+  }
+}
+.prev-ar{
+  top:60%;
+  left: 52px;
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+  z-index: 1010;
+  background-color: #ffffff;
+  box-shadow: 0 0 19.7px 4.3px rgba(0, 0, 0, 0.13);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .2s ease;
+  &:hover{
+    box-shadow: 0 0 29.7px 5.3px rgba(0, 0, 0, 0.23);
+    transition: all .2s ease;
+  }
+  &:before{
+    content: "";
+    display: block;
+    z-index: 4001;
+    width: 64px;
+    height: 64px;
+    margin-top: 3px;
+    margin-left: 3px;
+    transform: rotate(180deg);
+    background-image: url("../img/arrows_right.png");
+    background-size: cover;
+    transition: all .2s ease;
+  }
+  &:active{
+    &:before{
+      margin-left: -2px;
+      transition: all .2s ease;
+    }
+  }
+}
